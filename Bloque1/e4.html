@@ -4,12 +4,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Probando selectores CSS</title>
-    <style></style>
+    <style>
+      h2 {
+        color: blue;
+      }
+      #principal {
+        color: orange;
+      }
+      .parrafo1 {
+        color: red;
+      }
+      .parrafo2 {
+        color: green;
+      }
+      #secundario {
+        color: purple;
+      }
+    </style>
   </head>
   <body>
     <h1 id="principal">Artículo principal</h1>
     <h2>Subtítulo del artículo</h2>
-    <p style="color: red">
+    <p class="parrafo1">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
@@ -20,11 +36,11 @@
       publishing software like Aldus PageMaker including versions of Lorem
       Ipsum.
     </p>
-    <p class="lorem" style="color: blue">
+    <p class="parrafo2">
       Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
       consectetur, adipisci velit
     </p>
-    <p style="color: red">
+    <p>
       Contrary to popular belief, Lorem Ipsum is not simply random text. It has
       roots in a piece of classical Latin literature from 45 BC, making it over
       2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
@@ -32,14 +48,14 @@
       consectetur, from a Lorem Ipsum passage, and going through the cites of
       the word in classical literature, discovered the undoubtable source.
     </p>
-    <p class="lorem" style="color: blue">
+    <p class="parrafo2">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
     </p>
 
-    <h1>Artículo secundario</h1>
+    <h1 id="secundario">Artículo secundario</h1>
     <h2>Subtítulo del artículo</h2>
-    <p style="color: red">
+    <p>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
