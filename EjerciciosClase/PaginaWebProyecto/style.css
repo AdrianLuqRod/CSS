@@ -1,3 +1,17 @@
 body {
-    background-image: url(img/hola.jpg);
+    background-image: url(img/3.jpg);
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 10px solid red;
+}
+
+
+
+.rrss {
+    display: flex;
+    list-style: none;
 }
