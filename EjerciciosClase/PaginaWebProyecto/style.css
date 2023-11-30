@@ -11,18 +11,33 @@ body {
   box-shadow: 0 0 5px #ff0000;
   display: flex;
   justify-content: space-between;
-  /* border: 10px solid red; */
   background-color: #151515;
-  height: 80px;
+  height: px;
   align-items: center;
   /* padding-right: 5%; */
   /* padding-left: 5%; */
+}
+
+.header .logo-rrss {
+  /* box-shadow: 0 0 5px #ff0000; */
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.header .logo {
+  /* box-shadow: 0 0 5px #ff0000; */
+  padding-left: 40px;
+  margin-bottom: -17%;
+  text-align: center;
 }
 
 .header .form {
   box-shadow: 0 0 5px #ff0000;
   width: 250px;
 }
+
 .header .form .botones {
   box-shadow: 0 0 5px #ff0000;
   display: inline-flex;
@@ -31,12 +46,15 @@ body {
 }
 
 .rrss {
-  box-shadow: 0 0 5px #ff0000;
+  /* box-shadow: 0 0 5px #ff0000; */
+  padding-left: 40px;
+  padding-top: 5px;
   color: #151515;
   display: inline-flex;
   list-style: none;
-  /* border: 3px solid; */
 }
+
+
 
 /* - Aquí se hace el circulo y se recrea su contenido acorde al tamaño deseado */
 .rrss .icon {
@@ -46,8 +64,8 @@ body {
   border-radius: 50%;
   /* padding: left; */
   margin: 10px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
@@ -81,6 +99,7 @@ body {
   transform: translate(-50%) rotate(45deg);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.26, 1.55);
 }
+
 /* -Animacion */
 .rrss .icon:hover .textoIcono {
   bottom: -35px;
@@ -111,4 +130,24 @@ body {
   background-color: #1da1f2;
   box-shadow: 0 0 5px #1da1f2;
   color: #fff;
+}
+
+.header .logo-rrss .logo .logo-style {
+  text-decoration: none;
+  color: white;
+}
+
+.header .logo h2 {
+  /* font-weight: 600; */
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px #ff0000,
+    0 0 20px #ff0000,
+    0 0 40px #ff0000,
+    0 0 80px #ff0000,
+    0 0 120px #ff0000;
+}
+
+.header .logo-rrss #rrss .rrss .links-style {
+  text-decoration: none;
+  color: #151515;
 }
