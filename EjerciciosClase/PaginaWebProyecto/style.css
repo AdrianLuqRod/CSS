@@ -13,6 +13,21 @@ body {
   justify-content: space-between;
   /* border: 10px solid red; */
   background-color: #151515;
+  height: 80px;
+  align-items: center;
+  /* padding-right: 5%; */
+  /* padding-left: 5%; */
+}
+
+.header .form {
+  box-shadow: 0 0 5px #ff0000;
+  width: 250px;
+}
+.header .form .botones {
+  box-shadow: 0 0 5px #ff0000;
+  display: inline-flex;
+  margin: 10px;
+  padding-left: 5%;
 }
 
 .rrss {
@@ -21,20 +36,19 @@ body {
   display: inline-flex;
   list-style: none;
   /* border: 3px solid; */
-  padding-left: 5%;
 }
 
 /* - Aquí se hace el circulo y se recrea su contenido acorde al tamaño deseado */
 .rrss .icon {
-  box-shadow: 0 0 5px #ff0000;
+  /* box-shadow: 0 0 5px #ff0000; */
   position: relative;
   background-color: #ffff;
   border-radius: 50%;
-  padding: left;
+  /* padding: left; */
   margin: 10px;
   width: 50px;
   height: 50px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,6 +93,7 @@ body {
 .rrss .instagram:hover .textoIcono,
 .rrss .instagram:hover .textoIcono::before {
   background-color: #c32aa3;
+  box-shadow: 0 0 5px #c32aa3;
   color: #fff;
 }
 
@@ -86,6 +101,7 @@ body {
 .rrss .youtube:hover .textoIcono,
 .rrss .youtube:hover .textoIcono::before {
   background-color: #ff0000;
+  box-shadow: 0 0 5px #ff0000;
   color: #fff;
 }
 
@@ -93,5 +109,6 @@ body {
 .rrss .twitter:hover .textoIcono,
 .rrss .twitter:hover .textoIcono::before {
   background-color: #1da1f2;
+  box-shadow: 0 0 5px #1da1f2;
   color: #fff;
 }
