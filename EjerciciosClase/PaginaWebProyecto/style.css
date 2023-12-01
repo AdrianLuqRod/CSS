@@ -144,11 +144,9 @@ body {
 }
 
 .header .logo-rrss .rrss .links-style {
-  /* display: flex; */
+  display: flex;
   text-decoration: none;
   color: #151515;
-  height: 40px;
-  width: 40px;
-  /* padding:40% ; */
-  border-radius: 50%;
+  /* height: 60px;
+  width: 60px; */
 }
