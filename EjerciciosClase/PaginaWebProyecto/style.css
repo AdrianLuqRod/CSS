@@ -164,11 +164,48 @@ body {
   margin-bottom: 15px;
 } */
 
-.header .mainLogo-titulo .titulo h1 {
+/* .header .mainLogo-titulo .titulo h1 {
   box-shadow: 0 0 5px #ff0000;
   font-family: "Righteous", sans-serif;
   letter-spacing: 0.2em;
-  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000,
-    0 0 80px #ff0000, 0 0 120px #ff0000;
   font-size: xx-large;
+} */
+
+/* Texto-Sliced */
+/* !!! ENTENDER QUE HACE!!!!!!!!!!!!! */
+/* !!! ENTENDER QUE HACE!!!!!!!!!!!!! */
+/* !!! ENTENDER QUE HACE!!!!!!!!!!!!! */
+/* !!! ENTENDER QUE HACE!!!!!!!!!!!!! */
+/* !!! ENTENDER QUE HACE!!!!!!!!!!!!! */
+/* !!! ENTENDER QUE HACE!!!!!!!!!!!!! */
+/* !!! ENTENDER QUE HACE!!!!!!!!!!!!! */
+
+.sliced-text {
+  display: grid;
+  place-content: center;
+  margin: 0;
+  font-size: clamp(2rem, 1rem + 5vw, 5rem);
+  font-weight: 700;
+  /* text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; */
+}
+
+.sliced-text span {
+  display: block;
+  grid-area: 1/1/-1/-1;
+  white-space: nowrap;
+
+}
+
+.sliced-text span:first-child {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+
+.sliced-text span:last-child {
+  clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+  background: linear-gradient(178deg, black 53%, #FFFFFF 65%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transform: translateX(-0.025em);
+  color: transparent;
+
 }
