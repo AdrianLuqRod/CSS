@@ -17,14 +17,14 @@ body {
 }
 
 .header .logo-rrss {
-  box-shadow: 0 0 5px #ff0000;
+  /* box-shadow: 0 0 5px #ff0000; */
   display: flex;
   flex-direction: column;
   height: 120px;
 }
 
 .header .logo {
-  box-shadow: 0 0 5px #ff0000;
+  /* box-shadow: 0 0 5px #ff0000; */
   padding-left: 40px;
   margin-bottom: -7%;
   text-align: center;
@@ -44,11 +44,12 @@ body {
   margin: 10px;
   padding-left: 5%;
 }
+
 /* #rrss {
   box-shadow: 0 0 5px #ff0000;
 } */
 .rrss {
-  box-shadow: 0 0 5px #ff0000;
+  /* box-shadow: 0 0 5px #ff0000; */
   display: inline-flex;
   padding-left: 40px;
   color: #151515;
@@ -149,4 +150,24 @@ body {
   color: #151515;
   /* height: 60px;
   width: 60px; */
+}
+.header .mainLogo-titulo {
+  box-shadow: 0 0 5px #ff0000;
+}
+
+/* .header .mainLogo-titulo .mainLogo {
+  box-shadow: 0 0 5px #ff0000;
+  height: 40px;
+  width: 40px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+} */
+
+.header .mainLogo-titulo .titulo h1 {
+  box-shadow: 0 0 5px #ff0000;
+  font-family: "Righteous", sans-serif;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000,
+    0 0 80px #ff0000, 0 0 120px #ff0000;
+  font-size: xx-large;
 }
