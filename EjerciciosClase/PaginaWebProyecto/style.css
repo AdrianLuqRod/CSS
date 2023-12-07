@@ -6,9 +6,11 @@ body {
   font-family: "Poppins";
   margin: 0px;
 }
+
 .main-container {
   margin: 30px;
 }
+
 .header {
   /* box-shadow: 0 0 5px #ff0000; */
   display: flex;
@@ -182,13 +184,22 @@ body {
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
     0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
   color: #ffffff;
+  letter-spacing: 0.2em;
   font-family: "Righteous", sans-serif;
   text-align: center;
-  font-size: xxx-large;
+  font-size: 330%;
+
+  /* font-size: xxx-large; */
   animation: blink 3s infinite;
   -webkit-animation: blink 12s infinite;
 }
+
+.placeHolder .main-titulo {
+  text-decoration: none;
+}
+
 @-webkit-keyframes blink {
+
   20%,
   24%,
   55% {
@@ -214,6 +225,7 @@ body {
 }
 
 @keyframes blink {
+
   20%,
   24%,
   55% {
