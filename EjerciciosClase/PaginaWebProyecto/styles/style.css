@@ -29,7 +29,7 @@ body p {
   font-family: "Righteous", sans-serif;
 }
 
-
+/* - Todo el footer se configura entre las lineas 33-91 */
 .footer-principal {
   bottom: 0;
   display: flex;
@@ -208,10 +208,11 @@ body p {
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 3%;
+  padding: 1%;
   width: 50%;
   text-align: center;
 }
+
 
 .global-container .principal .formulario-registro {
   width: 420px;
