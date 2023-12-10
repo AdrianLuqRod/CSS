@@ -1,5 +1,4 @@
 body {
-  /* box-shadow: 0 0 5px #ff0000; */
   background-image: url(../img/02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,10 +7,17 @@ body {
   font-family: "Poppins";
   margin: auto;
   flex-direction: column;
+  text-align: justify;
 }
 
+body p {
+  text-align: justify;
+  text-align-last: center;
+}
+
+
 .header {
-  /* box-shadow: 0 0 5px #ff0000; */
+  border-bottom: 2px solid rgba(255, 255, 255, .2);
   position: sticky;
   top: 0;
   display: flex;
@@ -25,7 +31,6 @@ body {
 
 
 .footer-principal {
-  /* box-shadow: 0 0 5px #ff0000; */
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -37,7 +42,6 @@ body {
 }
 
 .footer-secundario {
-  /* box-shadow: 0 0 5px #ff0000; */
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -51,7 +55,6 @@ body {
 }
 
 .logo-terminos {
-  /* box-shadow: 0 0 5px #ff0000; */
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -62,7 +65,6 @@ body {
 
 
 .logo-terminos .logo {
-  /* box-shadow: 0 0 5px #ff0000; */
   padding-left: 45px;
   padding-right: 45px;
   text-align: center;
@@ -74,7 +76,6 @@ body {
 }
 
 .logo-terminos .terminos {
-  /* box-shadow: 0 0 5px #ff0000; */
   text-align: center;
   margin-top: -10%;
 }
@@ -90,7 +91,6 @@ body {
 }
 
 .header .logo-rrss {
-  /* box-shadow: 0 0 5px #ff0000; */
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -99,7 +99,6 @@ body {
 }
 
 .header .logo-rrss .logo {
-  /* box-shadow: 0 0 5px #ff0000; */
   padding-left: 45px;
   padding-right: 45px;
   margin-bottom: -7%;
@@ -110,7 +109,6 @@ body {
 }
 
 .header .logo-rrss .rrss {
-  /* box-shadow: 0 0 5px #ff0000; */
   display: inline-flex;
   justify-content: center;
   padding-left: 45px;
@@ -119,7 +117,6 @@ body {
 
 
 .header .mainLogo-titulo {
-  /* box-shadow: 0 0 5px #ff0000; */
   padding-left: 45px;
   padding-right: 45px;
   display: flex;
@@ -132,7 +129,6 @@ body {
 
 
 .global-container .header .form {
-  /* box-shadow: 0 0 5px #ff0000; */
   width: 340px;
   padding-left: 45px;
   padding-right: 45px;
@@ -143,7 +139,6 @@ body {
 
 .header .form .botones {
   position: relative;
-  /* box-shadow: 0 0 5px #ff0000; */
   display: inline-flex;
   margin: 5px;
   height: 50px;
@@ -170,45 +165,17 @@ body {
 
 }
 
-.global-container .header .form .botones:hover a {
-  letter-spacing: 0.25em;
-}
-
-.global-container .header .form .botones a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
-  transform: skewX(45deg) translateX(0);
-  transition: 0.5s;
-}
-
-.global-container .header .form .botones:hover a::before {
-  transform: skewX(45deg) translateX(200%);
-}
-
-
-
-
 
 .main-container {
   margin: 5em;
 }
 
-/* #rrss {
-  box-shadow: 0 0 5px #ff0000;
-} */
 
 /* - Aquí se hace el circulo y se recrea su contenido acorde al tamaño deseado */
 .rrss .icon {
-  /* box-shadow: 0 0 5px #ff0000; */
   position: relative;
   background-color: #ffff;
   border-radius: 50%;
-  /* padding: left; */
   margin: 10px;
   width: 40px;
   height: 40px;
@@ -219,69 +186,11 @@ body {
   flex-direction: column;
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.26, 1.55);
+  list-style: none;
 }
-
-/* - Se prepara la cajita de texto que aparece al pasar el raton por encima del icono */
-.rrss .textoIcono {
-  position: absolute;
-  bottom: 0;
-  font-size: 0.8rem;
-  background-color: #ffff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.26, 1.55);
-}
-
-.rrss .textoIcono::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background-color: #ffff;
-  top: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.26, 1.55);
-}
-
-/* -Animacion */
-.rrss .icon:hover .textoIcono {
-  bottom: -35px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.rrss .instagram:hover,
-.rrss .instagram:hover .textoIcono,
-.rrss .instagram:hover .textoIcono::before {
-  background-color: #c32aa3;
-  box-shadow: 0 0 5px #c32aa3;
-  color: #fff;
-}
-
-.rrss .youtube:hover,
-.rrss .youtube:hover .textoIcono,
-.rrss .youtube:hover .textoIcono::before {
-  background-color: #ff0000;
-  box-shadow: 0 0 5px #ff0000;
-  color: #fff;
-}
-
-.rrss .twitter:hover,
-.rrss .twitter:hover .textoIcono,
-.rrss .twitter:hover .textoIcono::before {
-  background-color: #1da1f2;
-  box-shadow: 0 0 5px #1da1f2;
-  color: #fff;
-}
-
 
 
 .header .logo h2 {
-  /* font-weight: 600; */
   letter-spacing: 0.1em;
   text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000,
     0 0 80px #ff0000, 0 0 120px #ff0000;
@@ -291,97 +200,6 @@ body {
   display: flex;
   text-decoration: none;
   color: #151515;
-  /* height: 60px;
-  width: 60px; */
-}
-
-
-/* .header .mainLogo-titulo .mainLogo {
-  box-shadow: 0 0 5px #ff0000;
-  height: 40px;
-  width: 40px;
-  margin-left: 15px;
-  margin-bottom: 15px;
-} */
-
-/* .header .mainLogo-titulo .titulo h1 {
-  box-shadow: 0 0 5px #ff0000;
-  font-family: "Righteous", sans-serif;
-  letter-spacing: 0.2em;
-  font-size: xx-large;
-} */
-
-.placeHolder h1 {
-  /* font-size: calc(20px + 18vh);
-    line-height: calc(20px + 20vh); */
-  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-    color: #fccaff; */
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-  color: #ffffff;
-  letter-spacing: 0.2em;
-  font-family: "Righteous", sans-serif;
-  text-align: center;
-  font-size: 330%;
-
-  /* font-size: xxx-large; */
-  animation: blink 3s infinite;
-  -webkit-animation: blink 12s infinite;
-}
-
-
-@-webkit-keyframes blink {
-
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
-  }
-
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-    /*     color: #fccaff;
-      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
-  }
-}
-
-@keyframes blink {
-
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
-  }
-
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-    /*     color: #fccaff;
-      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000,
-      0 0 80px #ff0000, 0 0 120px #ff0000;
-    /*   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-      color: #fff6a9; */
-  }
 }
 
 
@@ -391,9 +209,6 @@ body {
   align-items: center;
   margin: auto;
   padding: 5%;
-  /* padding-top: 3%;
-  padding-bottom: 9.4%; */
-  /* min-height: 100vh; */
   width: 50%;
   text-align: center;
 }
@@ -473,7 +288,6 @@ body {
 
 
 .principal-exito {
-  /* box-shadow: 0 0 5px #ff0000; */
   border: 2px solid rgba(255, 255, 255, 0.2);
   margin: auto;
   margin-top: 7em;
@@ -489,15 +303,320 @@ body {
 .principal-exito p {
   font-family: "Righteous", sans-serif;
   font-size: 33px;
+  text-align: justify;
+  text-align-last: center;
 }
 
 
 
 .global-container .main-container .noticia-mensual {
-  box-shadow: 0 0 5px #ff0000;
+  border: 2px solid rgba(255, 255, 255, .2);
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 50px;
-  padding: 1em;
+  padding: 20px;
+  background: #151515;
+  border-radius: 40px;
+}
+
+.global-container .main-container .noticia-mensual .titulo {
+  padding: 20px;
+  text-align: center;
+}
+
+
+.global-container .main-container .noticia-mensual .noticia-resumen {
+  padding: 20px;
+  text-align: center;
+}
+
+.global-container .main-container .noticia-mensual .imagen-noticia {
+  padding: 20px;
+}
+
+
+.global-container .main-mensual {
+  border: 2px solid rgba(255, 255, 255, .2);
+  margin: 80px;
+  padding: 40px;
+  background-color: #151515;
+  border-radius: 40px;
+}
+
+.global-container .main-mensual .imagen-texto {
+  display: inline-flex;
+  align-items: center;
+}
+
+.global-container .main-mensual .imagen-texto img {
+
+  border-radius: 40px;
+}
+
+.global-container .main-mensual .imagen-texto .texto {
+  padding: 40px;
+  text-align: justify;
+  text-align-last: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+
+
+
+.global-container .main-container .noticia-semanal {
+  position: sticky;
+  display: flex;
+  float: right;
+  top: 190px;
+  width: 300px;
+  height: 820px;
+  background-color: #151515;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 40px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 20px;
+  border: 2px solid rgba(255, 255, 255, .2);
+
+}
+
+.global-container .main-container img {
+  border-radius: 40px;
+}
+
+
+.global-container .main-video {
+  border: 2px solid rgba(255, 255, 255, .2);
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  width: 650px;
+  height: 400px;
+  margin: auto;
+  margin-top: 5%;
+  background-color: #151515;
+  border-radius: 40px;
+}
+
+
+
+.global-container .main-video video {
+  margin: auto;
+  border-radius: 40px;
+}
+
+
+.global-container .main-container .noticias {
+  border: 2px solid rgba(255, 255, 255, .2);
+  display: flex;
+  background-color: #151515;
+  margin: 40px;
+  border-radius: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+.titulo-noticia-normal,
+.resumen-noticia-normal,
+.imagen-noticia-normal {
+  padding: 20px;
+  margin: 20px;
+  font-size: 20px;
+}
+
+
+
+/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
+/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
+/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
+/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
+/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
+/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
+/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
+
+
+/* /* .global-container .header .form .botones:hover a {
+  letter-spacing: 0.25em;
+} */
+
+.global-container .header .form .botones a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  transform: skewX(45deg) translateX(0);
+  transition: 0.5s;
+}
+
+.global-container .header .form .botones:hover a::before {
+  transform: skewX(45deg) translateX(200%);
+}
+
+
+
+
+/* !!!!!!!!!!!!! COLORES DE RRSS */
+/* !!!!!!!!!!!!! COLORES DE RRSS */
+/* !!!!!!!!!!!!! COLORES DE RRSS */
+/* !!!!!!!!!!!!! COLORES DE RRSS */
+
+.rrss .instagram:hover,
+.rrss .instagram:hover .textoIcono,
+.rrss .instagram:hover .textoIcono::before {
+  background-color: #c32aa3;
+  box-shadow: 0 0 5px #c32aa3;
+  color: #fff;
+}
+
+.rrss .youtube:hover,
+.rrss .youtube:hover .textoIcono,
+.rrss .youtube:hover .textoIcono::before {
+  background-color: #ff0000;
+  box-shadow: 0 0 5px #ff0000;
+  color: #fff;
+}
+
+.rrss .twitter:hover,
+.rrss .twitter:hover .textoIcono,
+.rrss .twitter:hover .textoIcono::before {
+  background-color: #1da1f2;
+  box-shadow: 0 0 5px #1da1f2;
+  color: #fff;
+}
+
+/* !!!!!!! ANIMACION DESLIZANTE*/
+/* !!!!!!! ANIMACION DESLIZANTE*/
+/* !!!!!!! ANIMACION DESLIZANTE*/
+/* !!!!!!! ANIMACION DESLIZANTE*/
+
+/* -Animacion */
+.rrss .icon:hover .textoIcono {
+  bottom: -35px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+/* !!!!!!!! AQUI SE PREPARA LA CAJA DE TEXTO DE LAS RRSS */
+/* !!!!!!!! AQUI SE PREPARA LA CAJA DE TEXTO DE LAS RRSS */
+/* !!!!!!!! AQUI SE PREPARA LA CAJA DE TEXTO DE LAS RRSS */
+/* !!!!!!!! AQUI SE PREPARA LA CAJA DE TEXTO DE LAS RRSS */
+
+/* - Se prepara la cajita de texto que aparece al pasar el raton por encima del icono */
+.rrss .textoIcono {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.8rem;
+  background-color: #ffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.26, 1.55);
+}
+
+/* !!!AQUI SE PREPARA EL CUADRADO GIRADO QUE HACE FUNCION DE FLECHA PARA LA CAJA DE TEXTO */
+/* !!!AQUI SE PREPARA EL CUADRADO GIRADO QUE HACE FUNCION DE FLECHA PARA LA CAJA DE TEXTO */
+/* !!!AQUI SE PREPARA EL CUADRADO GIRADO QUE HACE FUNCION DE FLECHA PARA LA CAJA DE TEXTO */
+/* !!!AQUI SE PREPARA EL CUADRADO GIRADO QUE HACE FUNCION DE FLECHA PARA LA CAJA DE TEXTO */
+/* !!!AQUI SE PREPARA EL CUADRADO GIRADO QUE HACE FUNCION DE FLECHA PARA LA CAJA DE TEXTO */
+
+.rrss .textoIcono::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffff;
+  top: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.26, 1.55);
+}
+
+/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
+/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
+/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
+/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
+/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
+/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
+/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
+/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
+
+.placeHolder h1 {
+  /* text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+    color: #fccaff; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  font-family: "Righteous", sans-serif;
+  text-align: center;
+  font-size: 330%;
+  animation: blink 3s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+
+@-webkit-keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    /* color: #fccaff;
+        text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+          0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    /*     color: #fccaff;
+        text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+          0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000,
+      0 0 80px #ff0000, 0 0 120px #ff0000;
+    /*   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        color: #fff6a9; */
+  }
 }
