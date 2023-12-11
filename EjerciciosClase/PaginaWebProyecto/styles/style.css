@@ -159,7 +159,7 @@ body p {
 }
 
 .main-container {
-  margin: 5em;
+  margin: 80px;
 }
 
 /* - Aquí se hace el circulo y se recrea su contenido acorde al tamaño deseado */
@@ -208,9 +208,7 @@ body p {
   color: #fff;
   border-radius: 10px;
   padding: 30px 40px;
-  background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(20px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -474,7 +472,6 @@ body p {
   bottom: -35px;
   opacity: 1;
   visibility: visible;
-  pointer-events: auto;
 }
 
 /* !!!!!!!! AQUI SE PREPARA LA CAJA DE TEXTO DE LAS RRSS */
