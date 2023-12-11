@@ -15,9 +15,8 @@ body p {
   text-align-last: center;
 }
 
-
 .header {
-  border-bottom: 2px solid rgba(255, 255, 255, .2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   position: sticky;
   top: 0;
   display: flex;
@@ -60,9 +59,7 @@ body p {
   flex-direction: column;
   height: 120px;
   width: 340px;
-
 }
-
 
 .logo-terminos .logo {
   padding-left: 45px;
@@ -115,7 +112,6 @@ body p {
   padding-right: 45px;
 }
 
-
 .header .mainLogo-titulo {
   padding-left: 45px;
   padding-right: 45px;
@@ -127,7 +123,6 @@ body p {
   text-decoration: none;
 }
 
-
 .global-container .header .form {
   width: 340px;
   padding-left: 45px;
@@ -135,7 +130,6 @@ body p {
   display: flex;
   justify-content: space-between;
 }
-
 
 .header .form .botones {
   position: relative;
@@ -162,14 +156,11 @@ body p {
   text-decoration: none;
   overflow: hidden;
   transition: 0.5s;
-
 }
-
 
 .main-container {
   margin: 5em;
 }
-
 
 /* - Aquí se hace el circulo y se recrea su contenido acorde al tamaño deseado */
 .rrss .icon {
@@ -185,10 +176,9 @@ body p {
   align-items: center;
   flex-direction: column;
   cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.26, 1.55);
   list-style: none;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.26, 1.55);
 }
-
 
 .header .logo h2 {
   letter-spacing: 0.1em;
@@ -202,7 +192,6 @@ body p {
   color: #151515;
 }
 
-
 .global-container .principal {
   display: flex;
   justify-content: center;
@@ -212,7 +201,6 @@ body p {
   width: 50%;
   text-align: center;
 }
-
 
 .global-container .principal .formulario-registro {
   width: 420px;
@@ -244,7 +232,7 @@ body p {
   background: transparent;
   border: none;
   outline: none;
-  border: 2px solid rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 40px;
   font-size: 16px;
   color: #fff;
@@ -271,7 +259,6 @@ body p {
   font-weight: 600;
 }
 
-
 .global-container .principal .formulario-registro .registro .login-link {
   font-size: 16px;
 }
@@ -282,11 +269,15 @@ body p {
   font-weight: 600;
 }
 
-.global-container .principal .formulario-registro .registro .login-link p a:hover {
+.global-container
+  .principal
+  .formulario-registro
+  .registro
+  .login-link
+  p
+  a:hover {
   text-decoration: underline;
 }
-
-
 
 .principal-exito {
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -297,7 +288,6 @@ body p {
   background-color: #151515;
   width: 50%;
   border-radius: 50px;
-
 }
 
 .principal-exito p {
@@ -307,10 +297,8 @@ body p {
   text-align-last: center;
 }
 
-
-
 .global-container .main-container .noticia-mensual {
-  border: 2px solid rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   font-size: 50px;
@@ -324,7 +312,6 @@ body p {
   text-align: center;
 }
 
-
 .global-container .main-container .noticia-mensual .noticia-resumen {
   padding: 20px;
   text-align: center;
@@ -334,9 +321,8 @@ body p {
   padding: 20px;
 }
 
-
 .global-container .main-mensual {
-  border: 2px solid rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   margin: 80px;
   padding: 40px;
   background-color: #151515;
@@ -363,9 +349,6 @@ body p {
   font-weight: 600;
 }
 
-
-
-
 .global-container .main-container .noticia-semanal {
   position: sticky;
   display: flex;
@@ -381,17 +364,15 @@ body p {
   flex-direction: column;
   justify-content: space-around;
   font-size: 20px;
-  border: 2px solid rgba(255, 255, 255, .2);
-
+  border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .global-container .main-container img {
   border-radius: 40px;
 }
 
-
 .global-container .main-video {
-  border: 2px solid rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: center;
   padding: 40px;
@@ -403,16 +384,13 @@ body p {
   border-radius: 40px;
 }
 
-
-
 .global-container .main-video video {
   margin: auto;
   border-radius: 40px;
 }
 
-
 .global-container .main-container .noticias {
-  border: 2px solid rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   display: flex;
   background-color: #151515;
   margin: 40px;
@@ -429,8 +407,6 @@ body p {
   font-size: 20px;
 }
 
-
-
 /* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
 /* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
 /* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
@@ -438,14 +414,13 @@ body p {
 /* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
 /* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
 /* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
-
 
 /* /* .global-container .header .form .botones:hover a {
   letter-spacing: 0.25em;
 } */
 
 .global-container .header .form .botones a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -459,9 +434,6 @@ body p {
 .global-container .header .form .botones:hover a::before {
   transform: skewX(45deg) translateX(200%);
 }
-
-
-
 
 /* !!!!!!!!!!!!! COLORES DE RRSS */
 /* !!!!!!!!!!!!! COLORES DE RRSS */
@@ -504,7 +476,6 @@ body p {
   visibility: visible;
   pointer-events: auto;
 }
-
 
 /* !!!!!!!! AQUI SE PREPARA LA CAJA DE TEXTO DE LAS RRSS */
 /* !!!!!!!! AQUI SE PREPARA LA CAJA DE TEXTO DE LAS RRSS */
@@ -566,9 +537,7 @@ body p {
   -webkit-animation: blink 12s infinite;
 }
 
-
 @-webkit-keyframes blink {
-
   20%,
   24%,
   55% {
@@ -594,7 +563,6 @@ body p {
 }
 
 @keyframes blink {
-
   20%,
   24%,
   55% {
