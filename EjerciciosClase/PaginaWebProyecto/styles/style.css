@@ -552,7 +552,7 @@ body p {
     color: #ffffff;
   }
 }
-
+/* Primera cosa que se hace, transiciona con ese color y se le quita el efecto neon para crear ese efecto de blink */
 @keyframes blink {
   20%,
   24%,
