@@ -28,7 +28,6 @@ body p {
   font-family: "Righteous", sans-serif;
 }
 
-/* - Todo el footer se configura entre las lineas 33-91 */
 .footer-principal {
   bottom: 0;
   display: flex;
@@ -162,7 +161,7 @@ body p {
   margin: 80px;
 }
 
-/* - Aquí se hace el circulo y se recrea su contenido acorde al tamaño deseado */
+/* Aquí se hace el circulo y se recrea su contenido acorde al tamaño */
 .rrss .icon {
   position: relative;
   background-color: #ffff;
@@ -405,13 +404,7 @@ body p {
   font-size: 20px;
 }
 
-/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
-/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
-/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
-/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
-/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
-/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
-/* !!!! EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
+/* EFECTO DE LOS BOTONES DEL FORMULARIO, FONDO & SPACING */
 
 .global-container .header .form .botones:hover a {
   letter-spacing: 4px;
@@ -432,11 +425,6 @@ body p {
 .global-container .header .form .botones:hover a::before {
   transform: skewX(45deg) translateX(200%);
 }
-
-/* !!!!!!!!!!!!! COLORES DE RRSS */
-/* !!!!!!!!!!!!! COLORES DE RRSS */
-/* !!!!!!!!!!!!! COLORES DE RRSS */
-/* !!!!!!!!!!!!! COLORES DE RRSS */
 
 .rrss .instagram:hover,
 .rrss .instagram:hover .textoIcono,
@@ -462,10 +450,7 @@ body p {
   color: #fff;
 }
 
-/* !!!!!!! ANIMACION DESLIZANTE*/
-/* !!!!!!! ANIMACION DESLIZANTE*/
-/* !!!!!!! ANIMACION DESLIZANTE*/
-/* !!!!!!! ANIMACION DESLIZANTE*/
+/* ANIMACION DESLIZANTE*/
 
 /* -Animacion */
 .rrss .icon:hover .textoIcono {
@@ -474,12 +459,7 @@ body p {
   visibility: visible;
 }
 
-/* !!!!!!!! AQUI SE PREPARA LA CAJA DE TEXTO DE LAS RRSS */
-/* !!!!!!!! AQUI SE PREPARA LA CAJA DE TEXTO DE LAS RRSS */
-/* !!!!!!!! AQUI SE PREPARA LA CAJA DE TEXTO DE LAS RRSS */
-/* !!!!!!!! AQUI SE PREPARA LA CAJA DE TEXTO DE LAS RRSS */
-
-/* - Se prepara la cajita de texto que aparece al pasar el raton por encima del icono */
+/*  AQUI SE PREPARA LA CAJA DE TEXTO DE LAS RRSS */
 .rrss .textoIcono {
   position: absolute;
   bottom: 0;
@@ -492,11 +472,7 @@ body p {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.26, 1.55);
 }
 
-/* !!!AQUI SE PREPARA EL CUADRADO GIRADO QUE HACE FUNCION DE FLECHA PARA LA CAJA DE TEXTO */
-/* !!!AQUI SE PREPARA EL CUADRADO GIRADO QUE HACE FUNCION DE FLECHA PARA LA CAJA DE TEXTO */
-/* !!!AQUI SE PREPARA EL CUADRADO GIRADO QUE HACE FUNCION DE FLECHA PARA LA CAJA DE TEXTO */
-/* !!!AQUI SE PREPARA EL CUADRADO GIRADO QUE HACE FUNCION DE FLECHA PARA LA CAJA DE TEXTO */
-/* !!!AQUI SE PREPARA EL CUADRADO GIRADO QUE HACE FUNCION DE FLECHA PARA LA CAJA DE TEXTO */
+/* AQUI SE PREPARA EL CUADRADO GIRADO QUE HACE FUNCION DE FLECHA PARA LA CAJA DE TEXTO */
 
 .rrss .textoIcono::before {
   position: absolute;
@@ -510,14 +486,7 @@ body p {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.26, 1.55);
 }
 
-/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
-/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
-/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
-/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
-/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
-/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
-/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
-/* !!!! AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
+/*  AQUI SE HACE EL LOGO PRINCIPAL CON EFECTO BLINK ENTRE 2 COLORES + EFECTO NEON */
 
 .titulo-principal h1 {
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
